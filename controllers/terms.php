@@ -1,7 +1,7 @@
 <?php 
 
     $active='Shop';
-    include("includes/header.php");
+    include("views/header.php");
 
 ?>
    
@@ -141,7 +141,7 @@
    
    <?php 
     
-    include("includes/footer.php");
+    include("views/footer.php");
     
     ?>
     

@@ -1,5 +1,5 @@
 <?php 
-  include('includes/db.php');
+  require_once __DIR__. '/../models/db.php';
 ?>
 
 <div id="footer"> <!-- footer Begin -->

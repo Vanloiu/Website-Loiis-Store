@@ -1,8 +1,8 @@
 <?php 
 
   $active = 'Account';
-  include('includes/header.php');
-  include('includes/db.php');
+  include('views/header.php');
+  include('models/db.php');
 
 ?>
 
@@ -12,7 +12,7 @@
 
       <ul class="breadcrumb">
         <li>
-          <a href="index.php">Trang chủ</a>
+          <a href="ndex.php">Trang chủ</a>
         </li>
         <li>
           Đăng nhập
@@ -24,7 +24,7 @@
     <div class="col-md-3"> <!-- col-md-3 Begin -->
       
       <?php 
-        include('includes/sidebar.php');
+        include('views/sidebar.php');
       ?>
 
     </div> <!-- col-md-3 Finish -->
@@ -38,7 +38,7 @@
 
         } else {
 
-          include('payment_options.php');
+          include('controllers/payment_options.php');
 
         }
 
@@ -50,7 +50,7 @@
 
 <?php 
 
-  include('includes/footer.php');
+  include('views/footer.php');
 
 ?>
 

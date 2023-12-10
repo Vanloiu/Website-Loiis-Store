@@ -1,6 +1,6 @@
 <?php 
 
-  include('includes/header.php');
+  include('views/header.php');
 
 ?>
 
@@ -26,7 +26,7 @@
       <div class="col-md-3"> <!-- col-md-3 Begin -->
 
         <?php 
-          include('includes/sidebar.php');
+          include('views/sidebar.php');
         ?>
 
       </div> <!-- col-md-3 Finish -->
@@ -117,7 +117,7 @@
                   </div> <!-- col-md-7 Finish -->
                 </div> <!-- form-group Finish -->
 
-                <p class="price">Giá: <?php echo $pro_price ?> đ</p>
+                <p class="price">Giá: <?php echo $pro_price ?>.000 đ</p>
 
                 <p class="text-center buttons">
                   <button class="btn btn-primary i fa fa-shopping-cart">
@@ -197,7 +197,7 @@
 
   <?php 
   
-    include('includes/footer.php');
+    include('views/footer.php');
 
   ?>
 

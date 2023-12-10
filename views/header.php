@@ -1,8 +1,8 @@
 <?php 
 
   session_start();
-  include('includes/db.php');
-  include('functions/functions.php');
+  require_once __DIR__ . '/../models/db.php';
+  require_once __DIR__ . '/../models/functions/functions.php';
 
 ?>
 
@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css"></link>
-    <script src="js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
     <title>Loiis Store</title>
 </head>
 <body>
@@ -62,7 +62,7 @@
           ?>
 
         </a>
-        <a href="checkout.php"><?php itemsInCart(); ?> Items Trong Giỏ Hàng | Tổng tiền: <?php cartTotal(); ?> </a>
+        <a href="checkout.php"><?php itemsInCart(); ?> Items Trong Giỏ|Tổng tiền: <?php cartTotal(); ?> </a>
      
       </div> <!-- col-md-6 offer Finish -->
       <div class="col-md-6"> <!-- col-md-6 Begin -->
@@ -85,7 +85,7 @@
                   echo "<a href='checkout.php'> Đăng nhập </a>";
 
                 } else {
-                  echo "<a href='logout.php'> Đăng xuất </a>";
+                  echo "<a href='models/logout.php'> Đăng xuất </a>";
                   
                 }
               ?>

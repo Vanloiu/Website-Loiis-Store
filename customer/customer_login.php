@@ -64,7 +64,7 @@
     if($check_customer == 1 AND $check_cart == 0) {
       $_SESSION['customer_email'] = $customer_email;
       echo "<script>alert('Đăng nhập thành công!');</script>";
-      echo "<script>window.open('customer/my_account.php?my_orders','_self');</script>";
+      echo "<script>window.open('index.php','_self');</script>";
     } else {
       $_SESSION['customer_email'] = $customer_email;
       echo "<script>alert('Đăng nhập thành công!');</script>";

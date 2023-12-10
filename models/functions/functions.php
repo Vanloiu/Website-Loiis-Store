@@ -109,7 +109,7 @@
 
                             <p class='price'>
                             
-                                 $pro_price đ
+                                 $pro_price.000đ
                             
                             </p>
 
@@ -250,7 +250,7 @@
 
                                 <p class='price'>
                                 
-                                    CA$ $pro_price
+                                    $pro_price.000 đ
                                 
                                 </p>
 
@@ -335,7 +335,7 @@
                             <a href='details.php?pro_id=$pro_id'> $pro_title </a>
                           </h3>
                           <p class='price'>
-                            CA$$pro_price
+                            $pro_price.000 đ
                           </p>
                           <p class='button'>
                             <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
@@ -397,7 +397,7 @@
         if($total_sum == ''){
             echo "0 đ";
         } else {
-            echo  $total_sum." đ";
+            echo  $total_sum.".000 đ";
         }
 
     }
@@ -449,7 +449,7 @@
                     <a href='details.php?pro_id=$pro_id'> $pro_title </a>
                     </h3>
                     <p class='price'>
-                    CA$$pro_price
+                    $pro_price.000đ
                     </p>
                 </div>
                 </div>

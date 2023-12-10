@@ -1,7 +1,7 @@
 <?php 
 
-include("includes/db.php");
-include("functions/functions.php");
+include("models/db.php");
+include("controllers/functions.php");
 
 ?>
 <?php 

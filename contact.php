@@ -1,7 +1,7 @@
 <?php 
 
   $active = 'Contact';
-  include('includes/header.php');
+  include('views/header.php');
 
 ?>
 
@@ -23,7 +23,7 @@
       <div class="col-md-3"> <!-- col-md-3 Begin -->
 
         <?php 
-          include('includes/sidebar.php');
+          include('views/sidebar.php');
         ?>
 
       </div> <!-- col-md-3 Finish -->
@@ -82,7 +82,7 @@
 
   <?php 
   
-    include('includes/footer.php');
+    include('views/footer.php');
 
   ?>
 

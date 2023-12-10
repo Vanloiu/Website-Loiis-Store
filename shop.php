@@ -1,7 +1,7 @@
 <?php 
 
   $active = 'Shop';
-  include('includes/header.php');
+  include('views/header.php');
 
 ?>
 
@@ -23,7 +23,7 @@
       <div class="col-md-3"> <!-- col-md-3 Begin -->
 
         <?php 
-          include('includes/sidebar.php');
+          include('views/sidebar.php');
         ?>
 
       </div> <!-- col-md-3 Finish -->
@@ -86,7 +86,7 @@
                             <a href='details.php?pro_id=$pro_id'> $pro_title </a>
                           </h3>
                           <p class='price'>
-                            $pro_price đ
+                            $pro_price.000 đ
                           </p>
                           <p class='button'>
                             <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
@@ -175,7 +175,7 @@
 
   <?php 
   
-    include('includes/footer.php');
+    include('views/footer.php');
 
   ?>
 

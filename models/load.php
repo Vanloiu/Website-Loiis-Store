@@ -1,20 +1,20 @@
 <?php 
 
 session_start();
-include("includes/db.php");
+include("models/db.php");
 include("functions/functions.php");
 
 switch($_REQUEST['sAction']){
 
     default :
 
-    getProducts();
+   // getProducts();
 
     break;
 
     case'getPaginator';
 
-    getPaginator();
+   // getPaginator();
 
     break;
 

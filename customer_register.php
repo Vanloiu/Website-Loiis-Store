@@ -1,8 +1,8 @@
 <?php 
 
   $active = 'Account';
-  include('includes/header.php');
-  include('includes/db.php');
+  require_once __DIR__. '/views/header.php';
+  require_once __DIR__. '/models/db.php';
 
 ?>
 
@@ -12,7 +12,7 @@
 
         <ul class="breadcrumb">
           <li>
-            <a href="index.php">Trang chủ</a>
+            <a href="../index.php">Trang chủ</a>
           </li>
           <li>
             Đăng ký
@@ -24,7 +24,7 @@
       <div class="col-md-3"> <!-- col-md-3 Begin -->
 
         <?php 
-          include('includes/sidebar.php');
+         require_once __DIR__. '/views/sidebar.php';
         ?>
 
       </div> <!-- col-md-3 Finish -->
@@ -100,12 +100,12 @@
 
   <?php 
   
-    include('includes/footer.php');
+  require_once __DIR__.'/views/footer.php';
 
   ?>
 
-  <script src="js/jquery-331.min.js"></script>
-  <script src="js/bootstrap-337.min.js"></script>
+  <script src="/js/jquery-331.min.js"></script>
+  <script src="/js/bootstrap-337.min.js"></script>
 </body>
 </html>
 

@@ -1,7 +1,7 @@
 <?php 
 
   $active = 'Cart';
-  include('includes/header.php');
+  include('views/header.php');
 
 ?>
 
@@ -89,7 +89,7 @@
                       <?php echo $pro_qty; ?>
                     </td>
                     <td>
-                      <?php echo $item_price; ?>
+                      <?php echo $item_price; ?>.000 đ
                     </td>
                     <td>
                       <?php echo $pro_size; ?>
@@ -98,7 +98,7 @@
                       <input type="checkbox" name="remove[]" value="<?php echo $pro_id; ?>">
                     </td>
                     <td>
-                      CA$ <?php echo $subtotal; ?>
+                       <?php echo $subtotal; ?>.000 đ
                     </td>
                   </tr>
 
@@ -114,7 +114,7 @@
                 <tfoot>
                   <tr>
                     <th colspan="5">Tổng cộng</th>
-                    <th colspan="2">GIÁ <?php echo $total; ?> Đ</th>
+                    <th colspan="2">GIÁ <?php echo $total; ?> .000 Đ</th>
                   </tr>
                 </tfoot>
                 
@@ -187,7 +187,7 @@
                 </tr>
                 <tr class="total">
                   <td>Tổng cộng </td>
-                  <th><?php echo $total; ?> Đ</th>
+                  <th><?php echo $total; ?>.000 Đ</th>
                 </tr>
               </tbody>
             </table>
@@ -200,7 +200,7 @@
 
   <?php 
   
-    include('includes/footer.php');
+    include('views/footer.php');
 
   ?>
 

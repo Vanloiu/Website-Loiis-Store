@@ -15,51 +15,30 @@
           <li data-target="#myCarousel" data-slide-to="2"></li>
           <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol> <!-- carousel-indicators Finish -->
-<!--
-        <div class="carousel-inner"> 
 
-        
-          ?php 
-           //$get_slides = "select * from slider LIMIT 0,1";
-            $run_slides = $conn->query('select * from slider LIMIT 0,1');
-           // $run_slides = mysqli_query($conn,$get_slides);
-            while($row_slides=$run_slides->fetch()){
-             //while($row_slides=mysqli_fetch_array($run_slides)){
-              
-              $slide_name = $row_slides['slide_name'];
-              $slide_image = $row_slides['slide_image'];
-              //$slide_url = $row_slides['slide_url'];
-  
-              echo "
-                <div class='item active'>
-                     
-                          <img src='admin_area/slides_images/$slide_image'>
-                     
-                 </div>
-              ";
-            }
-            //get_slides = "select * from slider LIMIT 1,3";
-            $run_slides = $conn->query('select * from slider LIMIT 1,3');
-            //$run_slides = mysqli_query($conn,$get_slides);
-            //while($row_slides=mysqli_fetch_array($run_slides)){
-           while($row_slides=$run_slides->fetch()){
+<?php
+class ProductModel {
+    private $conn;
 
-              $slide_name = $row_slides['slide_name'];
-              $slide_image = $row_slides['slide_image'];
-              //$slide_url = $row_slides['slide_url'];
+    public function __construct($conn) {
+        $this->conn = $conn;
+    }
 
-              echo "
-                <div class='item'>
-                
-                  <img src='admin_area/slides_images/$slide_image'>
-                
-              
-              ";
-            } 
-          ?>         
-        </div>  -->
+    public function getProducts() {
+        $get_products = "SELECT * FROM product ORDER BY 1 DESC LIMIT 0,8";
+        $run_products = $this->conn->query($get_products);
+        return $run_products;
+    }
 
-        <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+    public function getProductCategories() {
+        $get_p_categories = "SELECT * FROM product_categories";
+        $run_p_categories = $this->conn->query($get_p_categories);
+        return $run_p_categories;
+    }
+}
+?>
+
+<a href="#myCarousel" class="left carousel-control" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
           <span class="sr-only">Previous</span>
         </a>
